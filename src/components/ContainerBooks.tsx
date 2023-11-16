@@ -30,7 +30,7 @@ const ContainerBooks: React.FC = () => {
                 <Link to='/favs' className="button-home">Favourites Books</Link>
                 <Link to='/create' className="button-home">Create books</Link>
             </div>
-            <ul className="grid grid-cols-3">
+            <ul className="grid">
                 {
                     books.length > 0 ? (
                         books.map((b: any) => (
