@@ -14,13 +14,15 @@ const useAPI = () => {
                 setBooks(response.data.items)
             }
             catch (error) {
-                console.error("Error in your request", error)
+                console.log("Error in your request", error)
             }
         }
         fetchingData()
     }, [])
 
-    return { books }
+    return {
+        books
+    }
 }
 
 export default useAPI
